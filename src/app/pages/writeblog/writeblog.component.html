@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div id="writeblog-container">
+  <div id="head"></div>
+  <div id="form">
+    <form action=""><div id="title-container">
+        <div id="title"> 
+            <label for="title">Title</label>
+            <input pInputText type="text" name="title" id="" />
+          
+            <label for="title">Image Link</label>
+            <input pInputText type="text" name="imagelink" id="" />
+         
+            <label for="catogory">
+              <p-multiSelect
+                [options]="categories"
+                optionLabel="name"
+                placeholder="Select catogory"
+              />
+            </label>
+          </div>
+          <div>
+            <button><i class="pi pi-send" style="color: rgb(7, 7, 7)"> Post</i></button>
+          </div>
+    </div>
+      
+      <div id="content">
+        <label for="content">Content</label><br>
+        <textarea
+          rows="16"
+          cols="110"
+          pInputTextarea
+          [autoResize]="true"
+        ></textarea>
+      </div>
+    </form>
+  </div>
+</div>

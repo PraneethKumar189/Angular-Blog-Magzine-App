@@ -1,0 +1,42 @@
+<div id="container">
+  <div id="in-container">
+    <div id="head">
+      <h1 [align]="center">Sign In</h1>
+    </div>
+
+    <div id="form-container">
+      <form>
+        <div id="form-control">
+          <label for="username">Name</label><br>
+          <input
+            type="text"
+            class=""
+            pInputText
+            name="username"
+            id="username"
+          />
+          
+        </div>
+        <div id="form-control">
+          <label for="regnum">Register Number</label><br>
+
+          <input type="text" pInputText name="rno" id="rno" />
+        </div>
+        <div id="form-control">
+          <p-calendar
+            [iconDisplay]="'input'"
+            placeholder="Date of birth"
+            [showIcon]="true"
+            inputId="icondisplay"
+            name="date"
+          />
+        </div>
+        <div id="sub">
+            
+            <p-button id="sub" label="Sign In" size="small" icon="pi pi-check" />
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
